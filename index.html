@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8"> 
+
+		<script src="script.js"></script>
+
+		<title>Magazzino</title>
+	</head>
+
+	<body onload="tabella()">
+
+		<h1>Magazzino</h1>
+
+		<br>
+		Il massimo e': <p id="massimo">30</p><br>
+
+		<h3>Items Stored</h3>
+		<div id="tabella"></div><br>
+
+		<button onclick="form_inserisci()">Insert item</button>
+		<div id="ins_item" style="display:none">
+			<form>
+			    <p>Oggetto: <input type='text' id='nome' name='nome' value=""/></p>
+			    <p>Numero: <input type='text' id='num' name='num' value=""/></p>
+			</form>
+			<button onclick="nuovoItem()">Inserisci</button>
+		</div>
+
+		<br>
+
+		<button onclick="form_max()">Cambia massimo</button>
+		<div id="ins_max" style="display:none">
+			<form>
+			    <p>Nuovo massimo: <input type='text' id='max' name='max' value=""/></p>
+			</form>
+			<button onclick="nuovoMassimo()">Cambia</button>
+		</div>
+	</body>
+</html>
